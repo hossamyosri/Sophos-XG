@@ -5,8 +5,6 @@
 
 This repository documents a practical deployment and configuration of a **Sophos XG Firewall (SFOS 21)** in a real organization, designed to secure and segment network access across multiple user groups, applying granular policies for security, access control, and performance.
 
-> ⚠️ **Note**: All sensitive data and real IPs have been obfuscated to preserve organizational confidentiality.
-
 ---
 
 ## 🧠 Objectives
@@ -96,19 +94,7 @@ This repository documents a practical deployment and configuration of a **Sophos
 
 ---
 
-## 📁 Repository Structure
 
-```
-├── README.md
-├── policies/
-│   ├── web-control.md
-│   ├── app-control.md
-│   └── firewall-rules.json
-├── images/
-│   ├── dashboard.png
-│   ├── network-diagram.png
-│   └── rule-example.png
-```
 
 ---
 
