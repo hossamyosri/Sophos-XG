@@ -1,0 +1,37 @@
+
+[
+  {
+    "name": "Staff-PCs Web Rule",
+    "source": "Staff-PCs",
+    "destination": "Any",
+    "service": "HTTP, HTTPS",
+    "action": "Allow",
+    "web_policy": "Strict-Web-Filter",
+    "app_policy": "Strict-App-Control"
+  },
+  {
+    "name": "Management Access",
+    "source": "Management",
+    "destination": "Any",
+    "service": "All",
+    "action": "Allow",
+    "web_policy": "Moderate-Web-Filter",
+    "app_policy": "Light-App-Control"
+  },
+  {
+    "name": "Guest Internet Only",
+    "source": "Personal Devices",
+    "destination": "WAN",
+    "service": "HTTP, HTTPS",
+    "action": "Allow",
+    "web_policy": "Minimal",
+    "app_policy": "None"
+  },
+  {
+    "name": "Block Unknown Devices",
+    "source": "Unassigned MACs",
+    "destination": "Any",
+    "service": "All",
+    "action": "Drop"
+  }
+]
